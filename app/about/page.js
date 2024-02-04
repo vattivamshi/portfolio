@@ -8,6 +8,7 @@ import arrow from '../../images/arrow.svg'
 import uniHertLight from '../../images/uniHertLight.png'
 import uniHertDark from '../../images/uniHertDark.png'
 import bhavans from '../../images/bhavans.png'
+import Me from '@/components/Me'
 function About() {
     const [isHovered, setIsHovered] = useState(false);
     const imageVariants = {
@@ -15,7 +16,7 @@ function About() {
         visible: { opacity: 1 },
     };
     return (
-    <div className='mt-16 px-10'>
+    <div className='mt-16 px-4 md:px-10'>
         
         <motion.div 
         initial={{opacity:0}}
@@ -33,7 +34,7 @@ function About() {
             
         }}
         viewport={{once:true}}
-        className='flex flex-col md:flex-row justify-center items-center text-center md:text-start md:items-start  mx-auto mt-8 gap-12'>
+        className='flex flex-col md:flex-row justify-center items-center  md:text-start md:items-start  mx-auto mt-8 gap-12'>
             <motion.div
                 className='w-fit relative '
                 onMouseEnter={() => setIsHovered(true)}
@@ -70,15 +71,20 @@ function About() {
                         />
                     </motion.div>
             </motion.div>
-            <div className='max-w-3xl text-lg md:text-xl text-secondaryTextLight dark:text-secondaryTextDark'>
+            <div className='max-w-3xl text-lg md:text-xl text-secondaryTextLight dark:text-secondaryTextDark px-4'>
                 <p>
-                I am an experienced business administration graduate and digital marketer who is currently pursuing a Master's in Business Analytics and Consultancy from the University of Hertfordshire. Proficient in data analysis, helping companies promote their products and drive growth through informed business decisions. Dedicated to providing customized solutions and committed to delivering results.
-                I have a passion for utilizing data to make informed business decisions and drive growth. As a consultant, I am dedicated to providing my clients with customized solutions that meet their specific needs. My goal is to help companies make the most of their resources and reach their full potential.
-                If you are looking for a consultant who is dedicated, knowledgeable, and results-driven, I would be honored to work with you.
+                Transitioning seamlessly from the dynamic world of digital marketing to the intricate realms of data analytics, I bring a unique blend of professional expertise and personal passions to the forefront. 
+                Recently distinguished with a Master's in Business Analytics and Consultancy from the University of Hertfordshire, my journey involves not only deciphering data for business transformation but also delving into the captivating worlds of anime and manga during leisure moments.
+                <br></br><br></br>
+                Beyond the confines of data analytics, I'm an avid reader, immersing myself in books on business strategy and wealth creation. 
+                On the court, you'll find me passionate about basketball and table tennis, where the thrill of the game mirrors the excitement I bring to my professional endeavors.
+                <br></br><br></br>
+                Fueling my wanderlust, I embark on journeys to explore new places, seamlessly blending my love for travel with a keen eye for discovering opportunities, both in business and in the rich tapestry of cultures around the world. 
+                If you're seeking a data analyst who not only transforms digital marketing strategies but also thrives on the eclectic tapestry of life's experiences, let's collaborate on a journey where professional excellence meets personal passions.
                 </p>
             </div>
         </motion.div>
-        <div className='flex flex-col items-start mx-auto mt-52'>
+        <div className='flex flex-col items-start mx-auto mt-52 px-4'>
             <motion.div 
             initial={{opacity:0, x:-50}}
             whileInView={{opacity:1, x:0}}
@@ -154,7 +160,7 @@ function About() {
                     />
                 </>
                 <div className='flex flex-col mx-auto justify-center items-center max-w-lg gap-3'>
-                    <h2 className='font-poppins font-semibold text-primaruy text-lg md:text-2xl text-primaryTextLight dark:text-primaryTextDark '>MSc in Business Analytics and Consultancy, Distinction-Graduated</h2>
+                    <h2 className='font-poppins font-semibold text-primaruy text-lg md:text-2xl text-primaryTextLight dark:text-primaryTextDark '>Bachelor of Business Administration, First Class - Graduated</h2>
                     <p className='text-secondaryTextLight dark:text-secondaryTextDark text-md md:text-xl'>
                         Description about the education. Concepts and technologies learnt.
                         Description about the education. Concepts and technologies learnt.
@@ -193,6 +199,8 @@ function About() {
             viewport={{once:true}}
             className='text-xl md:text-3xl text-secondaryTextLight dark:text-secondaryTextDark font-poppins font-semibold max-w-5xl px-4 lg:px-20'>This is what you'll see me doing when I'm off work</motion.h2>
         </div>
+
+        <Me/>
     </div>
     )
 }

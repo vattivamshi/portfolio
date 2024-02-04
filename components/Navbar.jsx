@@ -48,7 +48,12 @@ function Navbar() {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 className='text-center bg-secondaryBgLight dark:bg-secondaryBgDark px-2 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-lg'>
-                    <Link  href="/">Resume</Link>
+                    <a href="/Vamshi_Vatti_Resume.pdf"
+                    alt="My Resume"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                        Resume
+                    </a>
                 </motion.div>
             </div>
             

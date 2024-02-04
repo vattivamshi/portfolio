@@ -4,6 +4,7 @@ import Image from 'next/image'
 import arrow from '../images/arrow.svg'
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import realworldExp from "../images/realworld_experience.png";
+import kitek from "../images/kitek.png"
 
 function WorkExp() {
     const x = useMotionValue(0);
@@ -66,7 +67,7 @@ function WorkExp() {
                     rotateX,
                     transformStyle: "preserve-3d",
                 }}
-                className='relative w-80 h-60 md:w-2/5 md:h-80 rounded-2xl bg-secondaryBgLight dark:bg-secondaryBgDark duration-150'
+                className='relative w-80 h-60 md:w-2/5 md:h-96 rounded-2xl bg-secondaryBgLight dark:bg-secondaryBgDark duration-150'
             >
                 <Image
                     src={imageSrc}
@@ -74,9 +75,22 @@ function WorkExp() {
                         transform: "translateZ(75px)",
                         transformStyle: "preserve-3d",
                     }}
-                    className='absolute inset-4 grid place-content-center rounded-xl bg-white shadow-lg dark:shadow-2xl h-[90%] w-[94%]'
+                    className='absolute inset-4 grid place-content-center rounded-xl bg-white shadow-lg dark:shadow-2xl h-[80%] w-[94%]'
                     alt="Project Image"
                 />
+                <a className='absolute right-4 bottom-2 place-content-center rounded-xl  h-[10%] w-[80%] md:w-[50%] pt-8 md:pt-0 flex items-center gap-4' 
+                    href='https://21078320consulting.weebly.com/client-project.html' target='_blank'
+                    style={{
+                    transform: "translateZ(50px)",
+                    transformStyle: "preserve-3d",
+                }}
+                >
+                    <p className='text-lg font-semibold text-secondaryTextLight dark:text-secondaryTextDark'>Want to know more</p>
+                    <Image
+                        src={arrow}
+                        alt="Project Link Image"
+                    />
+                </a>
             </motion.div>
         );
     };
@@ -105,6 +119,7 @@ function WorkExp() {
                     alt='Right arrow'
                 />
             </motion.div>
+
             <motion.div 
             initial={{opacity:0, y:50}}
             whileInView={{opacity:1, y:0}}
@@ -115,19 +130,82 @@ function WorkExp() {
             }}
             viewport={{once:true}}
             className='flex flex-col md:flex-row gap-8 items-center px-4 lg:px-20 mt-20'>
-                <Card imageSrc={realworldExp} x={x} y={y}/>
+                <Card imageSrc={realworldExp} siteLink="https://21078320consulting.weebly.com/client-project.html" x={x} y={y}/>
                 <div className='flex flex-col gap-4 justify-start items-start'>
                     <div className='flex flex-col gap-2'>
-                        <h2 className='text-2xl md:text-3xl font-semibold font-poppins text-primaryTextLight dark:text-primaryTextDark'>Client Project</h2>
-                        <p className='text-lg md:text-xl text-secondaryTextLight dark:text-secondaryTextDark'>Duration</p>
+                        <h2 className='text-2xl md:text-3xl font-semibold font-poppins text-primaryTextLight dark:text-primaryTextDark'>Graduate Business Analyst Intern</h2>
+                        <p className='text-lg md:text-xl text-secondaryTextLight dark:text-secondaryTextDark font-semibold'>Mar'23 - Sep'23</p>
                     </div>
                     <p className='text-lg md:text-xl text-secondaryTextLight dark:text-secondaryTextDark max-w-2xl'>
-                    The SFS is planning to increase its revenues by increasing the prices for its membership. The client wants to know the impact of taking this decision.
+                    As a Business Analyst at SFS, I navigated through key stages to enhance the organization's financial standing and market competitiveness.
                     The project looks over whether it is viable for SFS to increase its membership prices and what are the mitigation steps it can take. 
-                    The main objective of the project is to analyse SFS's current membership fees, benefits, and market position to determine whether increasing membership prices is feasible and advisable.
+                    The main objective of my work was to analyse SFS's current membership fees, benefits, and market position to determine whether increasing membership prices is feasible and advisable.
                     </p>
-                </div>
+                    
+                    <p className='text-lg md:text-xl text-secondaryTextLight dark:text-secondaryTextDark font-semibold'>Skills Used</p>
+                    <div className='flex flex-wrap gap-3'>
+                        <div className='bg-accentOrange px-3 py-1 rounded-full text-primaryTextDark font-poppins'>
+                            Python
+                        </div>
+                        <div className='bg-accentOrange px-3 py-1 rounded-full text-primaryTextDark font-poppins'>
+                            Power BI
+                        </div>
+                        <div className='bg-accentOrange px-3 py-1 rounded-full text-primaryTextDark font-poppins'>
+                            R Programming
+                        </div>
+                    </div>
+                    
+                </div> 
             </motion.div>
+            {/* work 2 */}
+            <motion.div 
+            initial={{opacity:0, y:50}}
+            whileInView={{opacity:1, y:0}}
+            transition={{
+                ease: "linear",
+                duration: 0.5,
+                delay:0.5,
+            }}
+            viewport={{once:true}}
+            className='flex flex-col md:flex-row gap-8 items-center px-4 lg:px-20 mt-20'>
+                <Card imageSrc={kitek} x={x} y={y}/>
+                <div className='flex flex-col gap-4 justify-start items-start'>
+                    <div className='flex flex-col gap-2'>
+                        <h2 className='text-2xl md:text-3xl font-semibold font-poppins text-primaryTextLight dark:text-primaryTextDark'>Digital Marketing Executive</h2>
+                        <p className='text-lg md:text-xl text-secondaryTextLight dark:text-secondaryTextDark font-semibold'>Jul'21 - Aug'22</p>
+                    </div>
+                    <p className='text-lg md:text-xl text-secondaryTextLight dark:text-secondaryTextDark max-w-2xl'>
+                    I optimized social media campaigns, boosting engagement by 65% and utilized MYSQL database for targeted advertising. Leveraging Google Analytics and SEMrush, 
+                    I monitored and optimized FB/Pinterest ads, focusing on KPIs and conversion metrics. Additionally, analysed competitors using SEMrush and Ahrefs to develop strategies to improve website ranking and beat the competition.
+                    Excelled in email marketing, managing campaigns and analyzing performance. 
+                    </p>
+                    
+                    <p className='text-lg md:text-xl text-secondaryTextLight dark:text-secondaryTextDark font-semibold'>Skills Used</p>
+                    <div className='flex flex-wrap gap-3'>
+                        <div className='bg-accentOrange px-3 py-1 rounded-full text-primaryTextDark font-poppins'>
+                            Email Marketing
+                        </div>
+                        <div className='bg-accentOrange px-3 py-1 rounded-full text-primaryTextDark font-poppins'>
+                            Content Management Systems
+                        </div>
+                        <div className='bg-accentOrange px-3 py-1 rounded-full text-primaryTextDark font-poppins'>
+                            Digital Marketing
+                        </div>
+                        
+                    </div>
+
+                    <div className='flex flex-wrap gap-3'>
+                        <div className='bg-accentOrange px-3 py-1 rounded-full text-primaryTextDark font-poppins'>
+                            SEO
+                        </div>
+                        <div className='bg-accentOrange px-3 py-1 rounded-full text-primaryTextDark font-poppins'>
+                            Social Media Marketing
+                        </div>
+                    </div>
+                    
+                </div> 
+            </motion.div>
+                
         </div>
     )
 }
