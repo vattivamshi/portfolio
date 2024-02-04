@@ -7,6 +7,10 @@ import travelTrain from '../images/traveltrain.jpeg'
 import travelbuilding from '../images/charminar.jpg'
 import pulaoubin from '../images/pulaoubin.png'
 import londonbridge from '../images/londonbridge.jpeg'
+import mandi from '../images/mandi.jpeg'
+import pizza from '../images/pizza.jpeg'
+import pasta from '../images/pasta.jpeg'
+import ramen from '../images/ramen.jpeg'
 import {motion} from 'framer-motion'
 function Me() {
   return (
@@ -71,16 +75,16 @@ function Me() {
                     delay:0.5
                 }}
                 viewport={{once:true}}
-                className='flex flex-wrap gap-8 mx-auto justify-center'>
+                className='flex flex-wrap gap-8 mx-auto justify-center items-center'>
                 <Image 
                 src={travelbuilding}
-                width={200}
+                width={250}
                 height={50}
                 alt="Icon"
                 />
                 <Image 
                 src={travelTrain}
-                width={200}
+                width={190}
                 height={50}
                 alt="Icon"
                 />
@@ -123,7 +127,43 @@ function Me() {
                 Do you ever travel more than 10 miles to eat a shawarma, because I do. I'm not just your average foodie—I'm a culinary adventurer on a quest for flavor, and my passport is stamped with delicious destinations. 
                 Arab and Indian cuisines are my go-tos, but I'm not afraid to sprinkle in some Italian or Chinese flair. From street eats to fine dining, I live for flavor-packed adventures that tantalize the taste buds.
                 </p>
-            </motion.div>
+        </motion.div>
+        <motion.div 
+                initial={{opacity:0, y:50}}
+                whileInView={{opacity:1, y:0}}
+                transition={{
+                    ease: "easeOut",
+                    duration: 0.5,
+                    delay:0.5
+                }}
+                viewport={{once:true}}
+                className='flex flex-wrap gap-8 mx-auto justify-center items-center mt-16'>
+                <Image 
+                src={mandi}
+                width={220}
+                height={50}
+                alt="Icon"
+                />
+                <Image 
+                src={pizza}
+                width={220}
+                height={50}
+                alt="Icon"
+                />
+                <Image 
+                src={pasta}
+                width={300}
+                height={50}
+                alt="Icon"
+                />
+                <Image 
+                src={ramen}
+                width={300}
+                height={50}
+                alt="Icon"
+                />
+                
+        </motion.div>
     </div>
   )
 }
