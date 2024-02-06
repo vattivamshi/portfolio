@@ -270,7 +270,7 @@ function Projects() {
             }}
             viewport={{once:true}}
             className='flex flex-col md:flex-row gap-8 items-center mt-20'>
-                <Card imageSrc={carDealership} siteLink="https://github.com/vattivamshi/regression-for-predicting-car-re-sale-value" x={x} y={y}/>
+                <Card imageSrc={carDealership} siteLink="https://github.com/vattivamshi/predicting-car-resale-value-using-regression" x={x} y={y}/>
                 <div className='flex flex-col gap-4 justify-start items-start'>
                     <div className='flex flex-col gap-2'>
                         <h2 className='text-2xl md:text-3xl font-semibold font-poppins text-primaryTextLight dark:text-primaryTextDark'>Car Resale Value Predictor</h2>
