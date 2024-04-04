@@ -14,6 +14,7 @@ import googleAds from '../../images/google-ads.svg'
 import downtownhayati from '../../images/downtownhayati.png'
 import aiAlchemy from '../../images/aiAlchemy.png'
 import carDealership from '../../images/carDealership.jpg'
+import customerChurn from '../../images/customerChurn.png'
 import priceComparision from '../../images/priceComparision.png'
 import downArrowLight from "../../images/down_arrow_light.svg";
 import downArrowDark from "../../images/down_arrow_dark.svg";
@@ -270,6 +271,45 @@ function Projects() {
             }}
             viewport={{once:true}}
             className='flex flex-col md:flex-row gap-8 items-center mt-20'>
+                <Card imageSrc={customerChurn} siteLink="https://github.com/vattivamshi/Customer-Churn-Predictor" x={x} y={y}/>
+                <div className='flex flex-col gap-4 justify-start items-start'>
+                    <div className='flex flex-col gap-2'>
+                        <h2 className='text-2xl md:text-3xl font-semibold font-poppins text-primaryTextLight dark:text-primaryTextDark'>Customer Churn Predictor</h2>
+                        {/* <p className='text-lg md:text-xl text-secondaryTextLight dark:text-secondaryTextDark'>Duration</p> */}
+                    </div>
+                    <p className='text-lg md:text-xl text-secondaryTextLight dark:text-secondaryTextDark max-w-2xl'>
+                    Conducted thorough data analysis on customer churn for a telecom company using Python libraries including pandas, 
+                    numpy, seaborn, and matplotlib. This involved data cleaning, exploratory data analysis (EDA), visualization of churn trends, 
+                    correlation analysis, and logistic regression modeling for churn prediction. Results were exported to a CSV file. 
+                    In Power BI, I transformed insights into compelling visualizations and dashboards, showcasing reasons for churn, risk assessment by segmenting customers,
+                     and an interactive dashboard for easy interpretation. Predicted churn probabilities from Python were seamlessly integrated into Power BI for enhanced insights.
+                    </p>
+                    <p className='text-lg md:text-xl text-secondaryTextLight dark:text-secondaryTextDark font-semibold'>Skills Used</p>
+                    <div className='flex flex-wrap gap-3'>
+                        <div className='bg-accentOrange px-3 py-1 rounded-full text-primaryTextDark font-poppins'>
+                            Python
+                        </div>
+                        <div className='bg-accentOrange px-3 py-1 rounded-full text-primaryTextDark font-poppins'>
+                            Power BI
+                        </div>
+                        {/* <div className='bg-accentOrange px-3 py-1 rounded-full text-primaryTextDark font-poppins'>
+                            R Programming
+                        </div> */}
+                    </div>
+                </div>
+            </motion.div>
+
+            {/* Project 2 */}
+            <motion.div 
+            initial={{opacity:0, y:50}}
+            whileInView={{opacity:1, y:0}}
+            transition={{
+                ease: "easeOut",
+                duration: 0.5,
+                delay:0.5,
+            }}
+            viewport={{once:true}}
+            className='flex flex-col md:flex-row gap-8 items-center mt-20'>
                 <Card imageSrc={carDealership} siteLink="https://github.com/vattivamshi/predicting-car-resale-value-using-regression" x={x} y={y}/>
                 <div className='flex flex-col gap-4 justify-start items-start'>
                     <div className='flex flex-col gap-2'>
@@ -295,7 +335,7 @@ function Projects() {
                     </div>
                 </div>
             </motion.div>
-            {/* Project 2 */}
+            {/* Project 3 */}
             <motion.div 
             initial={{opacity:0, y:50}}
             whileInView={{opacity:1, y:0}}
@@ -332,7 +372,7 @@ function Projects() {
                 </div>
             </motion.div>
 
-            {/* Project 3 */}
+            {/* Project 4 */}
             <motion.div 
             initial={{opacity:0, y:50}}
             whileInView={{opacity:1, y:0}}
@@ -379,7 +419,7 @@ function Projects() {
                 </div>
             </motion.div>
             
-            {/* Project 4 */}
+            {/* Project 5 */}
             <motion.div 
             initial={{opacity:0, y:50}}
             whileInView={{opacity:1, y:0}}
