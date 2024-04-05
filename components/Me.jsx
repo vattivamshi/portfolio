@@ -6,6 +6,7 @@ import food from '../images/food.png'
 import travelTrain from '../images/traveltrain.jpeg'
 import travelbuilding from '../images/charminar.jpg'
 import pulaoubin from '../images/pulaoubin.png'
+import meLatest from '../images/meLatest.jpeg'
 import londonbridge from '../images/londonbridge.jpeg'
 import mandi from '../images/mandi.jpeg'
 import pizza from '../images/pizza.jpeg'
@@ -77,20 +78,20 @@ function Me() {
                 viewport={{once:true}}
                 className='flex flex-wrap gap-8 mx-auto justify-center items-center'>
                 <Image 
-                src={travelbuilding}
-                width={250}
+                src={meLatest}
+                width={300}
                 height={50}
+                alt="Icon"
+                />
+                <Image 
+                src={travelbuilding}
+                width={300}
+                height={150}
                 alt="Icon"
                 />
                 <Image 
                 src={travelTrain}
-                width={190}
-                height={50}
-                alt="Icon"
-                />
-                <Image 
-                src={pulaoubin}
-                width={400}
+                width={230}
                 height={50}
                 alt="Icon"
                 />
